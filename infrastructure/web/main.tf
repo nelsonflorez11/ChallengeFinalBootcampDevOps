@@ -19,7 +19,7 @@ resource "aws_launch_template" "Web-BootcampDevOps" {
   image_id      = data.aws_ami.ubuntu.id
   instance_type = "t1.micro"
   key_name = "BootcampDevOps"
-  user_data = filebase64("scripts/BootcampDevOps.sh")
+  user_data = filebase64("./scripts/BootcampDevOps.sh")
   
 }
 
